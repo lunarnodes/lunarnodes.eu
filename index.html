@@ -3,17 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance</title>
+    <title>Lunar Nodes</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="stars"></div>
     <div class="container">
-        <h1>Hey there!</h1>
-        <p>We're taking a short break to make some improvements. Thanks for your patience, and we'll be back up and running soon!</p>
-        <p>Cheers,</p>
-        <p>The Lunar Nodes Team</p>
-        <button onclick="window.location.href='https://discord.gg/Xf5S9TX5xz'"><i class="fab fa-discord"></i> Join us on Discord</button>
+        <div class="logo">
+            <div class="moon"></div>
+            <h2>Lunar Nodes</h2>
+        </div>
+        <h1>Coming Soon</h1>
+        <p class="message">We're working on something awesome! Lunar Nodes will provide premium hosting services for your Discord bots and websites at affordable prices.</p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <i class="fab fa-discord"></i>
+                <h3>Discord Bot Hosting</h3>
+                <p>Reliable, high-performance hosting for your Discord bots with 24/7 uptime.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-globe"></i>
+                <h3>Web Hosting</h3>
+                <p>Fast and secure web hosting with excellent support and competitive pricing.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-server"></i>
+                <h3>Dedicated Resources</h3>
+                <p>Dedicated CPU and RAM for your projects with flexible scaling options.</p>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <button onclick="window.location.href='https://discord.gg/Xf5S9TX5xz'">
+                <i class="fab fa-discord"></i> Join our Discord
+            </button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html> 
