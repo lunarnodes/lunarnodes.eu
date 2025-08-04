@@ -4,46 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lunar Nodes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="stars"></div>
-    <div class="container">
-        <div class="logo">
-            <img src="logo.png" alt="Lunar Nodes Logo" class="logo-img"> 
-            <h2>Lunar Nodes</h2>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo-title-container">
+                <img src="assets/ln-logo.png" alt="Lunar Nodes Logo" class="logo">
+            </div>
+            <nav class="nqmadakopirash">
+                <a href="#dash">Dashboard</a>
+                <a href="https://knowledge.lunarnodes.xyz">Knowledge Base & FAQs</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-        <h1>Coming Soon</h1>
-        <p class="message">We're working on something awesome! Lunar Nodes will provide premium hosting services for your Discord bots and websites at affordable prices.</p>
-        
-        <div class="features">
-            <div class="feature-item">
-                <i class="fab fa-discord"></i>
-                <h3>Discord Bot Hosting</h3>
-                <p>Reliable, high-performance hosting for your Discord bots with 24/7 uptime.</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-globe"></i>
-                <h3>Web Hosting</h3>
-                <p>Fast and secure web hosting with excellent support and competitive pricing.</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-server"></i>
-                <h3>Dedicated Resources</h3>
-                <p>Dedicated CPU and RAM for your projects with flexible scaling options.</p>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero nqmadakopirash">
+        <div class="hero-content">
+            <h2>Your realiable hosting solution.</h2>
+            <p>A high-quality hosting service, delivering high-performance solutions to meet your needs.</p>
+            <div class="cta-container">
+                <a href="#plans" class="cta-btn">Get Started</a>
+                <a href="https://discord.gg/Xf5S9TX5xz" target="_blank" class="discord-btn"><i class="fab fa-discord"></i> Discord</a>
             </div>
         </div>
-        
-        <div class="cta">
-            <button onclick="window.location.href='https://discord.gg/Xf5S9TX5xz'">
-                <i class="fab fa-discord"></i> Join our Discord
-            </button>
+        <div class="performance">
+            <div class="performance-content">
+                <h3>#1 PERFORMANCE</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertisement After Hero Section -->
+<section class="sponsor-ad">
+    <div class="ad-container">
+        <img src="assets/xh-logo.png" alt="XenonHost Logo" class="ad-logo">
+        <div class="ad-content">
+            <h2>Powered by XenonHost.co</h2>
+            <p>Get blazing fast hosting with 99.99% uptime and 24/7 support. Enjoy premium features at unbeatable prices!</p>
+            <a href="https://xenonhost.co" target="_blank" class="ad-btn">Explore XenonHost</a>
         </div>
     </div>
-    <script src="script.js"></script>
+</section>
+
+
+     <!-- Statistics Section -->
+ <section id="statistics" class="statistics-section section-border nqmadakopirash">
+    <h2>Our Statistics</h2>
+    <div class="statistics nqmadakopirash">
+        <div class="stat-card nqmadakopirash">
+            <h3>99.99% </h3>
+            <p>Uptime</p>
+        </div>
+        <div class="stat-card">
+            <h3>25+</h3>
+            <p>Customers</p>
+        </div>
+        <div class="stat-card">
+            <h3>24/7</h3>
+            <p>Support </p>
+        </div>
+        <div class="stat-card">
+            <h3>1TB+</h3>
+            <p>Data Managed</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section section-border nqmadakopirash">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Fast Servers</h3>
+                <p>Equipped with high-performance CPUs for optimal speed.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Good Locations</h3>
+                <p>A wide range of server locations for global coverage.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure & Reliable</h3>
+                <p>Our servers are fortified with top security measures for safe hosting.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-friends"></i>
+                <h3>24/7 Support</h3>
+                <p>Always here to assist you, whenever you need help.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Hosting Plans Section -->
+<section id="plans" class="plans-section section-border nqmadakopirash">
+    <h2>What We Offer</h2>
+    <div class="plans">
+        <div class="plan-card">
+            <i class="fab fa-node-js"></i> <!-- Node.js icon -->
+            <h3>Node.js Hosting</h3>
+           <!--<p class="price">$5/month</p> -->
+            <p>High-performance Node.js hosting with fast CPUs.</p>
+            <div class="plan-actions"> <!-- Wrap buttons in a new div -->
+                <a href="#" class="cta-btn">Select</a>
+            </div>
+        </div>
+        <div class="plan-card">
+            <i class="fab fa-python"></i> <!-- Python icon -->
+            <h3>Python Hosting</h3>
+            <!--<p class="price">$10/month</p> -->
+            <p>Flexible Python hosting with easy setup and deployment.</p>
+            <div class="plan-actions"> <!-- Wrap buttons in a new div -->
+                <a href="#" class="cta-btn">Select</a>
+            </div>
+        </div>
+        <div class="plan-card">
+            <i class="fas fa-gamepad"></i> <!-- Game Hosting icon -->
+            <h3>Game Hosting</h3>
+            <!--<p class="price">$20/month</p> -->
+            <p>Low-latency game hosting for the best gaming experience.</p>
+            <div class="plan-actions"> <!-- Wrap buttons in a new div -->
+                <a href="#" class="cta-btn">Select</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Knowledge Base & FAQs Section
+<section id="faq" class="faq-section section-border">
+    <h2>Knowledge Base & FAQs</h2>
+    <div class="faq-container">
+        <div class="faq">
+            <h3>What services do you offer?</h3>
+            <p>We offer fast and reliable hosting solutions, including shared, VPS, and dedicated hosting.</p>
+        </div>
+        <div class="faq">
+            <h3>How can I get support?</h3>
+            <p>Our support team is available 24/7 through live chat, email, and our support ticket system.</p>
+        </div>
+        <div class="faq">
+            <h3>How do I upgrade my plan?</h3>
+            <p>You can upgrade your plan anytime through your account dashboard or by contacting our support team.</p>
+        </div>
+         More FAQ items as needed 
+    </div>
+</section> -->
+
+<!-- Footer -->
+<footer>
+    <div class="footer-sections nqmadakopirash">
+        <div class="footer-column">
+            <h3>Payment Options</h3>
+            <ul>
+                <li>Paypal <i class="fab fa-paypal"></i></li>
+                <li>Crypto <i class="fab fa-bitcoin"></i></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="/terms.html">Terms of Service →</a></li>
+                <li><a href="/privacy.html">Privacy Policy →</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Node.JS Hosting</a></li>
+                <li><a href="#">Python Hosting</a></li>
+                <li><a href="#">Game Hosting</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">Dashboard →</a></li>
+                <li><a href="#">Panel →</a></li>
+                <li><a href="#">Server Status →</a></li>
+                <li><a href="https://knowledge.lunarnodes.xyz">Knowledge Base →</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-social">
+        <a href="https://discord.gg/Xf5S9TX5xz"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/lunarnodes.xyz"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="footer-contact nqmadakopirash">
+        <a href="mailto:support@mazenhost.com"><i class="fas fa-envelope"> </i>Email Us</i></a>
+        <a href="https://trustpilot.com/review/lunarnodes.xyz/"><i class="fas fa-star"></i>Trustpilot</i></a>
+    </div>
+
+    <div class="footer-bottom nqmadakopirash">
+        <p>&copy; 2024 Lunar Nodes  </p>
+    </div>
+</footer>
+
+<script src="assets/main.js"></script>
 </body>
 </html>
